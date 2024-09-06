@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-image: url("imagen/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    color: aqua;
+    font-size: xx-large;
+    padding: 15%;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#yesBtn {
+    background-color: #4CAF50;
+    color: white;
+    transform: translate(-100%, 0);
+}
+
+#yesBtn:hover {
+    background-color: #45a049;
+}
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#noBtn:hover {
+    background-color: #da190b;
+}
+
+/* Estilos para el corazón */
+.heart-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5rem; /* Tamaño del corazón */
+}
+
+.heart {
+    color: red;
+    animation: heartbeat 1.5s infinite; /* Llama a la animación heartbeat */
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
